@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bgimg {
+  height: 100vh;
+  width: 100%;
+  background-image: url("MainPic.jpg");
+  background-size: cover;
+  filter: brightness(0.3);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  height: 12vh;
+  /* max-width: 120rem; */
+}
+
+nav img {
+  margin-left: -62px;
+  margin-top: -8px;
+  width: 9.25rem;
+}
+
+button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  /* Applied inside button */
+  margin: 0 8px;
+  /* Applied outside button */
+  font-size: 1rem;
+  cursor: pointer;
+  height: 8vh;
+  font-size: larger;
+  margin: 10px;
+}
+
+span button:nth-child(1) {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  /* height: 24px; */
+  /* padding: 4px 8px; */
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  flex-direction: column;
+  gap: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 900;
+  max-width: 35%;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+h2 {
+  font-weight: 100;
+  padding: auto;
+}
+
+input {
+  color: white;
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 7px;
+  width: 20vw;
+  background: transparent;
+  border: 1px solid #232223;
+  filter: brightness(4.25);
+  line-height: 2.5;
+}
+
+.line {
+  height: 1px;
+  background: linear-gradient(to right, #a0020a, rgb(254, 4, 4), #aa060e);
+  border: solid 0.25rem transparent;
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+}
+
+.tn {
+  color: white;
+  overflow-x: scroll;
+  background-color: black;
+
+  font-size: 30px;
+  font-family: sans-serif;
+  padding: 8rem 10rem;
+}
+
+.cards1to11 {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 60px;
+  margin-top: 3rem;
+}
+
+.card {
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-out;
+}
+
+.card img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.numbers {
+  position: absolute;
+  bottom: -30px;
+  left: -35px;
+  font-size: 7rem;
+  color: black;
+  font-weight: 600;
+  -webkit-text-stroke: 2px white;
+  /* for text border */
+  text-shadow: 2px 3px white;
+}
+
+/* @media only screen and (max-width: 1314px) {
+  .cards1to7 {
+    display: flex;
+    gap: 40px;
+    margin-top: 3rem;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 947px) {
+  .cards1to7 {
+    display: flex;
+    gap: 40px;
+    margin-top: 3rem;
+    flex-direction: column;
+  }
+} */
+
+/* Hide scrollbar (right side) */
+html {
+  overflow: auto; /* Scrolling enable rahegi */
+  -ms-overflow-style: none; /* Internet Explorer, Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar (bottom ) */ 
+.tn::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
